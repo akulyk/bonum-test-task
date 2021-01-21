@@ -1,0 +1,50 @@
+{
+    "name": "akulyk/bonum-test-task",
+    "description": "Bonum Studio rest api with php yii2 test task",
+    "keywords": ["yii2", "framework", "php", "rest", "api"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/akulyk/bonum-test-task/issues?state=open",
+        "source": "https://github.com/akulyk"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4.0",
+        "yiisoft/yii2": "~2.0.40",
+        "yiisoft/yii2-bootstrap": "~2.0.10",
+        "yiisoft/yii2-swiftmailer": "~2.1.2",
+        "almasaeed2010/adminlte": "^3.0",
+        "kartik-v/yii2-widget-select2": "^2.2",
+        "light/yii2-swagger": "3.0",
+        "ext-json": "*",
+        "sizeg/yii2-jwt": "^2.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "~2.1.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/codeception": "^4.0",
+        "codeception/module-asserts": "^1.0",
+        "codeception/module-yii2": "^1.0",
+        "codeception/module-filesystem": "^1.0",
+        "codeception/verify": "~0.5.0 || ~1.1.0",
+        "symfony/browser-kit": ">=2.7 <=4.2.4",
+        "codeception/module-phpbrowser": "^1.0",
+        "codeception/module-rest": "^1.2"
+
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
