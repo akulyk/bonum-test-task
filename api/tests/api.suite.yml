@@ -1,0 +1,13 @@
+actor: ApiTester
+modules:
+    enabled:
+        - REST:
+            url: 'http://api.bonum.loc/index-test.php'
+            depends: PhpBrowser
+            part: Json
+        - Yii2:
+            part: fixtures
+            cleanup: false
+            configFile: 'config/test.php'
+            entryScript: index-test.php
+        - Asserts
