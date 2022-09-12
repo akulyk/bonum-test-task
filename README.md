@@ -1,22 +1,20 @@
-#Тестовое задание Bonum Studio
+#Test task Bonum Studio
 РНР (YII2) developer
 
-Необходимо реализовать простую crm систему:
-Необходимо использовать AdminLTE.
-0. Вход в crm осуществляется с помощью логина и пароля
-1. В crm должен быть список компаний. (возможность создать, изменить, удалить).
-(должны быть валидация входящих данных)
-2. Должен быть список клиентов компаний (возможность создать, изменить, удалить) (должны быть валидаторы входящих данных).
-3. Клиенты в базе данных должны быть связаны с компаниями.
-4. Таблицы должны быть описаны с помощью миграций.
-5. Таблицы должны наполняться тестовыми данными. (сгенерировать больше 10 тысяч
-значений в каждой базе)
-6. Реализовать три rest api метода
-6.1 Companies - должен возвращать список компаний в формате json с возможностью
+Goal - create a simple CRM system:
+AdminLTE has to be used.
+0. Enter to crm is provived by login and password
+1. In CRM list of companies should be present. (ability to create, update and delete, all data should be validated).
+2. In CRM list of company clients should be present (ability to create, update and delete, all data should be validated).
+3. Clients in database should be connected with companies.
+4. Tables should be described with migrations.
+5. Tables should have a test data. (generate more then 10 thousands for each table)
+6. Three rest api methods should be provided.
+6.1 Companies - should return a company list in json format with ability to paginate
 пагинации
-6.2 Clients - принимает айди компании, возвращает список клиентов в json с возможностью пагинации.
-6.3 Client_companies - принимает айди клиента, возвращает список компаний связанных с клиентом.
-7. При доступе к апи должна происходить bearer авторизация.
+6.2 Clients - accepts company ID, return list of clients json in json format with ability to paginate.
+6.3 Client_companies - accepts client ID, return list of comanies connected with a client.
+7. API should be protected by Bearer auth.
 ================================================================================
 ### Description
 For test purpose only.
