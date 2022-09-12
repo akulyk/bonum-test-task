@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace api\forms\auth;
 
+use api\models\auth\User;
 use yii\base\Model;
 
 /**
@@ -41,6 +42,7 @@ class RegisterForm extends Model
             [['email', 'password'], 'trim'],
             [['email'], 'email'],
             [['email'], 'filter', 'filter' => 'strtolower'],
+            ['email','unique','targetClass' => User::class,'targetAttribute' => 'email']
         ];
     }
 }
